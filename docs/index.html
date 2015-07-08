@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Globule | Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Globule&rdquo; Documentation by &ldquo;-Latitude&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Globule&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 16/03/2012<br>
+					By: -Latitude<br>
+					Email: <a href="mailto:creativelatitude@me.com">creativelatitude@me.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/-Latitude">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+			<li><a href="#">API Usage</a> <em class="quiet small">(If your theme uses an API)</em></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+		<p>This theme is a responsive layout using <a href="http://twitter.github.com/bootstrap/">twitter bootstrap 2.0</a> (All bootrap features are included in this theme so you can add or adjust any features or styles found in the bootstrap documentation). All of the content is held on the one page (index.html) and the width of the content area adjusts for mobile, and 980px and 1200px wide. </p>
+				
+		<p>Each section is wrapped up in a few divs to give some CSS glow effects, etc. If you would like to edit the color, font, you would do the following:</p>
+
+<pre>	#primaryContent a {
+		color: #someColor;
+	} 
+</pre>
+
+		<p>If you find that your new style is not overriding, it is most likely because of a specificity problem. Scroll down in your CSS file and make sure that there isn't a similar style that has more weight.</p>
+
+		<p>I.E.</p>
+
+<pre>	#wrap #primaryContent a {
+		color: #someColor;
+	}
+</pre>
+
+		<p>So, to ensure that your new styles are applied, make sure that they carry enough "weight" and that there isn't a style lower in the CSS file that is being applied after yours.</p> 
+
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using two CSS files in this theme. The first one is <a href="http://twitter.github.com/bootstrap/">twitter bootstrap 2.0</a> and you can use anything you find in there documentation. Keep in mind, that these values might be overridden somewhere else in the file and you should make any customization in the site.css file, and not editing the bootstrap files.</p> 
+
+		<p>The second file (site.css) contains all of the specific stylings for the page. The file is separated into sections and each section has media queries for the different screen sizes. When your customizing this, be sure to make appropriate changes in each media query, and test that you get your desired changes at those specific screen sizes.</p>  
+
+<pre>	/* Global Style */
+
+	some code
+
+	@media {
+	
+	some code
+	
+	}
+	
+	etc, etc. 
+</pre>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+
+		<p>Note: Some pieces of content are turned off at smaller screen sizes. Inside the media queries for smaller screens you will see 'display: none;' set on those elements. To turn them on, just set to 'display: block;'.</p>
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports several Javascript files.</p>
+		
+		<ol>
+			<li>Google Analytics</li>
+			<li>jQuery</li>
+			<li>jQuery Easings</li>
+			<li>Modernizr</li>
+			<li>Twitter Bootstrap</li>
+		</ol>
+		  
+		<ol>
+			<li>Google Analytics is a free site tracking system from Google - Just add your unique ID - If your not going to use Google Analytics removed this script.</li>
+			<li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>jQuery Easings adds a more natural effect to jQuery animations. This is used when sizing the Globules.</li>
+			<li>Modernizr is used here to help standardize the way some our CSS3 items work accross browsers.</li>
+			<li>Twitter Bootstrap JS adds in functionality for all the components you will find in there documentation. We specifically use the Carousel and Tooltips. If you wish to lighten the page size, you can download a customized package of <a href="http://twitter.github.com/bootstrap/">twitter bootstrap 2.0</a> and include only the components you wish to use.
+			</li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>Icons from <a href="http://twitter.github.com/bootstrap/">twitter bootstrap 2.0</a></li>
+			<li><a href="http://twitter.github.com/bootstrap/">twitter bootstrap 2.0</a></li>
+			<li>Carousel Images are from my own personal photo collection and are free to use</li>
+			<li>Male Portrait, Attribution License - <a href="http://www.flickr.com/photos/yuri-samoilov/4105603525/">http://www.flickr.com/photos/yuri-samoilov/4105603525/</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>-Latitude</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
